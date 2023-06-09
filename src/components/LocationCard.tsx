@@ -12,18 +12,18 @@ export const LocationCard = ({ location, fromPage }: Props) => {
       className="location-card"
       to={`/locations/${location.id}?fromPage=${fromPage}`}
     >
-      <h2>{location.name}</h2>
+      <h2 className="text-overflow">{location.name || "-"}</h2>
       <dl>
         <dt>Type</dt>
-        <dd>{location.type}</dd>
+        <dd className="text-overflow">{location.type || "-"}</dd>
       </dl>
       <dl>
         <dt>Dimension</dt>
-        <dd>{location.dimension}</dd>
+        <dd className="text-overflow">{location.dimension || "-"}</dd>
       </dl>
       <dl>
         <dt>Resident count</dt>
-        <dd>{location.residents.length}</dd>
+        <dd>{location.residents.length || "-"}</dd>
       </dl>
     </Link>
   );

@@ -24,12 +24,14 @@
         display: flex;
         margin: 0;
         & > dt {
-            width: 110px;
+            min-width: 110px;
         }
         & > dd {
-            white-space: nowrap;
-            overflow: hidden;
-            text-overflow: ellipsis;
+            margin-left: 10px;
+            &::before {
+                content: ':';
+                margin-right: 5px;
+            }
         }
     }
 }

@@ -9,7 +9,7 @@ type Props<T> = {
 export function usePaginator<T = any>({
   initialPage,
   items = [],
-  perPage = 10,
+  perPage = 14,
 }: Props<T>) {
   const [page, _setPage] = useState(initialPage || 1);
 

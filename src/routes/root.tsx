@@ -10,7 +10,7 @@ export default function Root() {
     return Number(searchParams.get("page") ?? 1);
   });
 
-  const { isLoading, data: locations } = useGetLocationsApi(page);
+  const { data: locations } = useGetLocationsApi(page);
 
   const { results, info } = locations || {};
 

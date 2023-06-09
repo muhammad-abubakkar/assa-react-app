@@ -12,9 +12,12 @@
 .character-card {
     color: unset;
     text-decoration: none;    
-    width: 300px;
+    width: 225px;
     border-radius: 15px;
     font-size: 14px;
+    @media screen and (max-width: 600px) {
+        width: 210px;
+    }
     & > h2 {
         font-size: 18px;
         font-weight: 500;
@@ -28,8 +31,7 @@
         gap: 5px;
     }
     & > img {
-        width: 300px;
-        height: 300px;
+        width: 100%;
         background-color: $gray;
         object-fit: fill;
         border-radius: 25px;

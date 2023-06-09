@@ -10,10 +10,10 @@ export const CharacterCard = ({ character }: Props) => {
   return (
     <Link className="character-card" to={"/"}>
       <img src={character.image} alt={`character face`} />
-      <h2>{character.name}</h2>
+      <h2 className="text-overflow">{character.name}</h2>
       <p>
         <span className={`status-${status.toLowerCase()} active`}></span>
-        <span>
+        <span className="text-overflow">
           {status} - {species}
         </span>
       </p>
