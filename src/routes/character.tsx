@@ -13,11 +13,9 @@ export default function Character() {
     page,
   });
 
+  const locationId = character ? character.location.url.split("/").pop() : "";
+
   return (
-    <Layout backLink={`/locations?page=${page}`}>
-      <div className="character-detail">
-        {character && <CharacterCard character={character} />}
-      </div>
-    </Layout>
+    <Layout backLink={`/locations/${locationId}?page=${page}`}>what</Layout>
   );
 }

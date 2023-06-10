@@ -8,7 +8,7 @@ type Props = {
 export const CharacterCard = ({ character }: Props) => {
   const { status, species } = character;
   return (
-    <Link className="character-card" to={"/"}>
+    <Link className="character-card" to={`/characters/${character.id}`}>
       <img src={character.image} alt={`character face`} />
       <h2 className="text-overflow">{character.name}</h2>
       <p>

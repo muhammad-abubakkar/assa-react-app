@@ -40,7 +40,7 @@ export default function Location() {
   });
 
   return (
-    <Layout backLink={`/locations?page=${searchParams.get("fromPage") || 1}`}>
+    <Layout backLink={`/locations?page=${fromPage}`}>
       <div className="character-detail">
         <CharacterStatusFilter onChange={setStatus} />
         <CharacterList characters={pageItems} />
