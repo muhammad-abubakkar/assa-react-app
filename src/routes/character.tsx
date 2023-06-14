@@ -11,7 +11,7 @@ export default function Character() {
 
   const { isLoading, data: character } = useGetSingleCharacterApi({
     characterId,
-    page: fromPage,
+    locationPage,
   });
 
   const locationId = character ? character.location.url.split("/").pop() : "";
